@@ -1,0 +1,11 @@
+.boton{
+    margin-left: 5rem;
+    border-radius: 12px;
+    background-color: rgba(35,35,59,255);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    padding: 5px;
+}
+.boton:focus{
+    color: rgb(146, 146, 255);
+}
