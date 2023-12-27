@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
      <NavBar />
-     <ItemListContainer style={{marginLeft:'10rem'}} props= {'Bienvenido a su librería'}/>
+     <ItemListContainer props= {'Bienvenido a su librería'}/>
     </div>
   )
 }

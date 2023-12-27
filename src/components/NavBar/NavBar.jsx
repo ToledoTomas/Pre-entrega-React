@@ -1,14 +1,15 @@
 import classes from './NavBar.module.css'
 import logoEcommerce from './assets/logoEcommerce.svg'
 import Button from '../Button/Button'
+import CartWidget from '../CartWidget/CartWidget'
 
 const NavBar = () => {
     return (
-        <nav style={{display:'flex', alignItems:'center', justifyContent: 'flex-start'}}>
+        <nav>
 
-        <a href="#"><img style = {{width: '5rem'}}src={logoEcommerce} alt="Logo ecommerce" /></a>
+        <a href="#"><img src={logoEcommerce} alt="Logo ecommerce" /></a>
 
-        <section style={{marginLeft: '28rem'}}>
+        <section>
 
             <Button label={'Home'} handleClick={()=>console.log('Hiciste click en Home')}/>
 
@@ -17,6 +18,10 @@ const NavBar = () => {
              <Button label={'Contact'} handleClick={()=>console.log('Hiciste click en Contact')}/>
 
         </section>
+        
+        <div>
+            <CartWidget />
+        </div>
          
         </nav>
     )
