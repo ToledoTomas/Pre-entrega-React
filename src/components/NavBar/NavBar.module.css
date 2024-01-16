@@ -1,15 +1,21 @@
-nav {
+.nav {
     background-color: rgba(35,35,59,255);
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-img {
+.img {
     width: 5rem;
     margin-left: 3rem;
 }
 
-section {
-    margin-right: 3rem;
+.link {
+    color: whitesmoke;
+    margin-left: 1rem;
+}
+
+.link:hover {
+    text-decoration: underline;
+    opacity: 75%;
 }

@@ -2,25 +2,30 @@ import classes from './NavBar.module.css'
 import logoEcommerce from './assets/logoEcommerce.svg'
 import Button from '../Button/Button'
 import CartWidget from '../CartWidget/CartWidget'
+import { Link } from 'react-router-dom'
 
 const NavBar = () => {
     return (
-        <nav>
+        <nav className={classes.nav}>
+            <Link to='/'>
 
-        <a href="#"><img src={logoEcommerce} alt="Logo ecommerce" /></a>
+                 <a href="#"><img className={classes.img} src={logoEcommerce} alt="Logo ecommerce" /></a>
 
+            </Link>
         <section>
 
-            <Button label={'Home'} handleClick={()=>console.log('Hiciste click en Home')}/>
+            <Link to={'/category/terror'} className={classes.link}>Terror</Link>
 
-             <Button label={'About me'} handleClick={()=>console.log('Hiciste click en About me')}/>
+            <Link to={'/category/fantasia'} className={classes.link}>Fantasía</Link>
 
-             <Button label={'Contact'} handleClick={()=>console.log('Hiciste click en Contact')}/>
+            <Link to={'/category/informatica'} className={classes.link}>Informática</Link>
 
         </section>
         
         <div>
+
             <CartWidget />
+            
         </div>
          
         </nav>

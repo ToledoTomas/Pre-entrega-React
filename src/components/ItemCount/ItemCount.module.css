@@ -1,0 +1,48 @@
+.divPadre{
+    margin-top: 1rem;
+}
+.control {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.numero {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
+.cantidad {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+.botonCantidad{
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(26, 26, 253);
+    border-radius: 15px;
+    transition: all;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.555);
+    width: 150px;
+    margin-bottom: 1rem;
+}
+.botonCantidad:hover{
+    background-color: rgb(87, 87, 255);
+}
+.botonCantidad:active{
+    translate: 0 1px;
+}
+.boton{
+    width: 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(26, 26, 253);
+    padding: 2px 4px;
+    border-radius: 8px;
+    transition: all;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.555);
+}
+.boton:hover{
+    background-color: rgb(87, 87, 255);
+}
+.boton:active{
+    translate: 0 1px;
+}
