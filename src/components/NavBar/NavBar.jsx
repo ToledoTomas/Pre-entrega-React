@@ -9,16 +9,16 @@ const NavBar = () => {
         <nav className={classes.nav}>
             <Link to='/'>
 
-                 <a href="#"><img className={classes.img} src={logoEcommerce} alt="Logo ecommerce" /></a>
+                <img className={classes.img} src={logoEcommerce} alt="Logo ecommerce" />
 
             </Link>
         <section>
 
-            <Link to={'/category/terror'} className={classes.link}>Terror</Link>
+            <Link to={'/category/Terror'} className={classes.link}>Terror</Link>
 
-            <Link to={'/category/fantasia'} className={classes.link}>Fantasía</Link>
+            <Link to={'/category/Fantasía'} className={classes.link}>Fantasía</Link>
 
-            <Link to={'/category/informatica'} className={classes.link}>Informática</Link>
+            <Link to={'/category/Programación'} className={classes.link}>Informática</Link>
 
         </section>
         
